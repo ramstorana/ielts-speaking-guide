@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>IELTS Speaking Test Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .nav-bubbles {
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            justify-content: center;
+        }
+        .nav-bubble {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .nav-bubble:hover {
+            background-color: #0056b3;
+        }
+        .blog-post {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .blog-post h2 {
+            color: #007BFF;
+            cursor: pointer;
+            margin-top: 0;
+        }
+        .blog-post h2:hover {
+            color: #0056b3;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .quiz {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .quiz button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .quiz button:hover {
+            background-color: #0056b3;
+        }
+        .sample-answer {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #007BFF;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+        .planning-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #f8f9fa;
+        }
+        .planning-table td {
+            border: 2px solid #007BFF;
+            padding: 15px;
+            vertical-align: top;
+            width: 50%;
+        }
+        .prompt-header {
+            background-color: #FF8C42;
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>IELTS Speaking Test: Your Ultimate Guide</header>
+    <div class='container'>
+        <div class='nav-bubbles'>
+            <a class='nav-bubble' href='#part1' onclick='scrollToSection("part1")'>IELTS Speaking Part 1</a>
+            <a class='nav-bubble' href='#part2' onclick='scrollToSection("part2")'>IELTS Speaking Part 2</a>
+            <a class='nav-bubble' href='#part3' onclick='scrollToSection("part3")'>IELTS Speaking Part 3</a>
+        </div>
+        <div class='blog-post' id='part1'>
+            <h2 onclick='toggleContent("part1-content")'>Welcome to Part 1 of the IELTS Speaking Test</h2>
+            <div id='part1-content' class='content active'>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("overview-content")'>Introduction</h2>
+                    <div id='overview-content' class='content active'>
+                        <p>Part 1 of the IELTS Speaking Test is a 4-5 minute conversation about familiar, everyday topics like family, studies, or hobbies. The examiner asks questions to assess your fluency and ability to communicate basic ideas.</p>
+                        <p><strong>Key Topics:</strong> Family, friends, daily routine, studies, hometown, and more.</p>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("question-types-content")'>Types of Questions</h2>
+                    <div id='question-types-content' class='content'>
+                        <p><strong>1. Closed-Ended Questions:</strong> Simple 'yes/no' questions, but you should expand your answer. Example: 'Do you have any hobbies? Why?'</p>
+                        <p><strong>2. Open-Ended Questions:</strong> Require detailed responses. Example: 'What are the advantages of having hobbies?'</p>
+                        <div class='quiz'>
+                            <p><strong>Quick Check:</strong> Which type of question is 'Do you like studying alone?'</p>
+                            <button onclick='alert("Correct! It\'s a closed-ended question. Expand your answer with \'Why?\'")'>Closed-Ended</button>
+                            <button onclick='alert("Incorrect. It\'s a closed-ended question.")'>Open-Ended</button>
+                        </div>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("question-functions-content")'>Understanding Question Functions</h2>
+                    <div id='question-functions-content' class='content'>
+                        <p>In Part 1, questions have specific functions—purposes you need to address in your answer. Identifying the function helps you respond relevantly.</p>
+                        <p><strong>Common Functions:</strong></p>
+                        <ul>
+                            <li><strong>Describe:</strong> Provide details about something. Example: 'Can you tell me something about your hometown?'</li>
+                            <li><strong>Give a Preference:</strong> State what you prefer. Example: 'Do you like to study alone or with friends?'</li>
+                            <li><strong>Give an Opinion:</strong> Share your thoughts. Example: 'What do you think about online shopping?'</li>
+                            <li><strong>Explain:</strong> Provide reasons. Example: 'Why do you like your hometown?'</li>
+                            <li><strong>Suggest:</strong> Offer ideas. Example: 'What hobbies would you recommend to others?'</li>
+                            <li><strong>Compare and Contrast:</strong> Highlight similarities or differences. Example: 'How is living in a city different from living in a village?'</li>
+                        </ul>
+                        <p><strong>Tip:</strong> Some questions combine functions, like giving a preference and explaining it (e.g., 'Do you like to study alone or with friends? Why?').</p>
+                        <div class='quiz'>
+                            <p><strong>Practice Activity:</strong> What is the function of 'Why do you enjoy shopping?'</p>
+                            <button onclick='alert("Correct! The function is to explain your reasons.")'>Explain</button>
+                            <button onclick='alert("Incorrect. The function is to explain, not describe.")'>Describe</button>
+                            <button onclick='alert("Incorrect. The function is to explain, not give a preference.")'>Give a Preference</button>
+                        </div>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("topics-content")'>Sample Topics & Questions</h2>
+                    <div id='topics-content' class='content'>
+                        <p><strong>Topic 1: Studies</strong></p>
+                        <ul>
+                            <li>Do you like studying alone or with friends? Why? <em>(Function: Give a Preference + Explain)</em></li>
+                            <li>What would you like to study in the future? <em>(Function: Describe)</em></li>
+                        </ul>
+                        <p><strong>Topic 2: Shopping</strong></p>
+                        <ul>
+                            <li>Do you enjoy shopping? Why or why not? <em>(Function: Give a Preference + Explain)</em></li>
+                            <li>What are the benefits of shopping online? <em>(Function: Explain)</em></li>
+                        </ul>
+                        <p><strong>Topic 3: Home</strong></p>
+                        <ul>
+                            <li>Do you live in an apartment or a house? <em>(Function: Describe)</em></li>
+                            <li>What is your house like? <em>(Function: Describe)</em></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("develop-answers-content")'>Developing Your Answers</h2>
+                    <div id='develop-answers-content' class='content'>
+                        <p>One key skill in Part 1 is speaking at length. Aim for answers of 15-20 seconds by adding details. Avoid short 'yes/no' responses.</p>
+                        <p><strong>Strategy:</strong> Expand answers by asking yourself 2-3 Wh- questions (Who, What, Why, Where, How) related to the topic.</p>
+                        <p><strong>Practice Activity:</strong> Answer these questions, record yourself, and compare to the sample answers below.</p>
+                        <ul>
+                            <li><strong>Question 1: Who do you live with at the moment?</strong>
+                                <div class='sample-answer'>
+                                    <p><em>Sample Answer:</em> With my brother. He's just moved out of my parent's house and is looking for a part-time job and his own place, so I wanted to help him save some money. He's OK to live with but he's a bit messy sometimes. We help each other a lot though… with the cleaning, the cooking … and he's a lot of fun to be around.</p>
+                                </div>
+                            </li>
+                            <li><strong>Question 2: Do you enjoy your job?</strong>
+                                <div class='sample-answer'>
+                                    <p><em>Sample Answer:</em> Yes. I'm a primary school teacher. I've been doing this for three years now and I really enjoy it, mainly because I really love being with small children. It can be challenging sometimes, but I love creating fun learning activities for my students. It's a very rewarding job.</p>
+                                </div>
+                            </li>
+                            <li><strong>Question 3: What do you often do in the evenings?</strong>
+                                <div class='sample-answer'>
+                                    <p><em>Sample Answer:</em> I'm often quite tired in the evenings, after work, you know, so I just get back home, prepare a quick meal and then relax while I watch some TV. Sometimes I watch the news or a movie with my flatmate. On the weekends though, I do enjoy going out so I catch up with my friends for a drink and a chat.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class='quiz'>
+                            <p><strong>Try It:</strong> Pick one question above, answer it for 15-20 seconds, and compare to the sample. Did you add enough detail?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("useful-tips-content")'>Useful Tips for Part 1</h2>
+                    <div id='useful-tips-content' class='content'>
+                        <p>Here are some practical tips to help you perform better in Part 1 of the IELTS Speaking Test:</p>
+                        <ul>
+                            <li><strong>Tip 1 - Develop Your Ideas:</strong> Say interesting things about yourself by avoiding yes/no answers. Explain, suggest, give opinions, and provide examples. Aim for answers of 15-20 seconds.</li>
+                            <li><strong>Tip 2 - Let the Examiner Interrupt You:</strong> Don't worry if this happens—it's a good sign that you're speaking at length.</li>
+                            <li><strong>Tip 3 - Avoid Asking Questions to the Examiner:</strong> Do not ask things like "What about you?" The examiner will not respond.</li>
+                            <li><strong>Tip 4 - Correct Yourself:</strong> If you make a mistake, confidently correct it by saying, "Sorry, that's not what I meant" or "Let me say that again."</li>
+                            <li><strong>Tip 5 - Ask for Clarification:</strong> If you don't understand a question, ask for a repeat confidently with phrases like "Excuse me, can you repeat that again?" or "Do you mind repeating the question, please?"</li>
+                        </ul>
+                        <div class='quiz'>
+                            <p><strong>Quick Check:</strong> What should you say if you don't understand a question?</p>
+                            <button onclick='alert("Correct! This is a polite way to ask for clarification.")'>Excuse me, can you repeat that again?</button>
+                            <button onclick='alert("Incorrect. This is too informal for the test setting.")'>What?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("prep-tips-content")'>How to Prepare Effectively</h2>
+                    <div id='prep-tips-content' class='content'>
+                        <p>Use the <strong>PREP Framework</strong> to ace Part 1:</p>
+                        <ul>
+                            <li><strong>Predict:</strong> Brainstorm common topics and questions.</li>
+                            <li><strong>Rehearse:</strong> Record yourself answering questions.</li>
+                            <li><strong>Expand:</strong> Add details to every answer.</li>
+                            <li><strong>Personalize:</strong> Connect answers to your life.</li>
+                        </ul>
+                        <div class='quiz'>
+                            <p><strong>Try It:</strong> Record an answer to 'Do you have any hobbies?' and review it!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='blog-post' id='part2'>
+            <h2 onclick='toggleContent("part2-content")'>Welcome to Part 2 of the IELTS Speaking Test</h2>
+            <div id='part2-content' class='content'>
+                <div class='blog-post'>
+                    <h2>Introduction</h2>
+                    <p>In the second part of the speaking test, known as the ‘The Long Turn’, you will give a short presentation on a topic provided by the examiner. You will be assessed on your ability to speak at length using appropriate language.</p>
+                    <p>In this section of the course, you will:</p>
+                    <ul>
+                        <li>Learn about the format of Part 2 of the test, and the kind of questions you may be asked</li>
+                        <li>Acquire strategies which will help you provide more effective answers</li>
+                        <li>Learn specific language skills to help you improve your fluency, vocabulary, grammar, and pronunciation</li>
+                        <li>Learn useful tips to do your best when answering questions for this part of the test</li>
+                        <li>Watch and analyse a candidate answering some sample questions for this part of the test</li>
+                        <li>Have the chance to answer some practice questions and self-assess your responses</li>
+                    </ul>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("planning-content")'>Planning Your Answer</h2>
+                    <div id='planning-content' class='content'>
+                        <p>In Part 2, you'll receive a topic card, a pencil/pen, and a planning sheet. You have <strong>one minute</strong> to prepare your 2-minute presentation.</p>
+                        <p><strong>3-Step Planning Process:</strong></p>
+                        <ol>
+                            <li><strong>Understand the Topic Card:</strong> Read the topic and prompts carefully. The examiner will read the main question aloud, then you read the prompts yourself.</li>
+                            <li><strong>Write Down Ideas:</strong> Use keywords only (no full sentences). Write in English and use abbreviations to save time.</li>
+                            <li><strong>Divide Planning Sheet:</strong> Split your paper into quarters—one for each prompt. This ensures logical organization and complete coverage.</li>
+                        </ol>
+                        <div class='sample-answer'>
+                            <p><strong>Example Topic Card:</strong></p>
+                            <p><em>Describe an item of technology that you use to make your daily life easier.</em></p>
+                            <p>You should say:</p>
+                            <ul>
+                                <li>what it is</li>
+                                <li>what you use it for</li>
+                                <li>how often you use it</li>
+                                <li>and explain why it makes your life easier</li>
+                            </ul>
+                        </div>
+                        <p><strong>Planning Sheet Example:</strong></p>
+                        <table class='planning-table'>
+                            <tr>
+                                <td>
+                                    <div class='prompt-header'>1st Prompt</div>
+                                    <ul>
+                                        <li>mob phone</li>
+                                        <li>small: take w/u all time + everywhere</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div class='prompt-header'>2nd Prompt</div>
+                                    <ul>
+                                        <li>20 yrs ago: ph calls</li>
+                                        <li>now, many things:</li>
+                                        <li style='margin-left: 20px;'>- pics &nbsp;&nbsp;&nbsp; - videos</li>
+                                        <li style='margin-left: 20px;'>- sms &nbsp;&nbsp;&nbsp; - music</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class='prompt-header'>3rd Prompt</div>
+                                    <ul>
+                                        <li>all the time</li>
+                                        <li>social media (fam. + friends)</li>
+                                        <li>news (world news)</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <div class='prompt-header'>4th Prompt</div>
+                                    <ul>
+                                        <li>cheaper $: call fam. 4-free everyday</li>
+                                        <li>calendar: appts + social events</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <p><strong>Why This Plan Works:</strong></p>
+                        <ul>
+                            <li>Well organized (divided into four sections)</li>
+                            <li>Easy to follow (clockwise flow)</li>
+                            <li>Uses all prompts on the topic card</li>
+                            <li>Avoids full sentences—only key words</li>
+                            <li>Uses abbreviations (mob, w/u, sms, fam)</li>
+                            <li>Uses bullet points you can tick while speaking</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("developing-content")'>Developing Your Answer</h2>
+                    <div id='developing-content' class='content'>
+                        <p>Your goal is to speak as close to <strong>2 minutes</strong> as possible. Let the examiner stop you—don't stop early!</p>
+                        <p><strong>Strategies to Reach 2 Minutes:</strong></p>
+                        <ol>
+                            <li><strong>Use All Prompts:</strong> Each prompt on the topic card is essential. Using only 1-2 prompts won't provide enough content.</li>
+                            <li><strong>Add Your Own Prompts:</strong> Include 2-3 additional relevant points during planning. Examples for a book topic:
+                                <ul>
+                                    <li>Who recommended the book</li>
+                                    <li>What you learned from it</li>
+                                    <li>What book you're planning to read next</li>
+                                </ul>
+                            </li>
+                            <li><strong>Develop Each Prompt:</strong> For every point in your plan, include 2-3 ideas (details, examples, explanations). This guarantees sufficient content and proper coverage.</li>
+                        </ol>
+                        <div class='sample-answer'>
+                            <p><strong>Example: Additional Prompts for Book Topic</strong></p>
+                            <p><em>Describe a book you recently read.</em></p>
+                            <p><strong>Given prompts:</strong> what kind of book, what it's about, what sort of people would enjoy it, why you liked it</p>
+                            <p><strong>Possible additional prompts:</strong> who recommended it, what you learned, what you're reading next</p>
+                        </div>
+                        <div class='quiz'>
+                            <p><strong>Practice Tip:</strong> Time yourself speaking for 2 minutes on any topic. Can you fill the entire time without running out of content?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("useful-tips-part2-content")'>Useful Tips for Part 2</h2>
+                    <div id='useful-tips-part2-content' class='content'>
+                        <p>Here are some practical tips to help you perform better in Part 2 of the IELTS Speaking Test:</p>
+                        <ul>
+                            <li><strong>Tip 1 - Use Your Planning Time Effectively:</strong> You only have one minute. Preparing well helps you reach the two-minute time limit and speak cohesively. Good preparation ensures your answers follow the same order as the prompts on the topic card.</li>
+                            <li><strong>Tip 2 - Use All the Prompts:</strong> This ensures you address all parts of the question and speak for as close to 2 minutes as possible.</li>
+                            <li><strong>Tip 3 - Add Your Own Prompts:</strong> Some candidates find that using only the three or four prompts on the topic card isn't enough to speak for about two minutes. You can add more information as long as you stay on topic.</li>
+                            <li><strong>Tip 4 - Expect No Feedback from the Examiner:</strong> Examiners are not allowed to assist you or comment on your presentation. They will simply move on to follow-up questions or the next part of the speaking test.</li>
+                            <li><strong>Tip 5 - Let the Examiner Stop You:</strong> Believe it or not, this is what you want to happen. If the examiner stops you, it means you have spoken for two minutes.</li>
+                        </ul>
+                        <div class='quiz'>
+                            <p><strong>Quick Check:</strong> What does it mean if the examiner stops you during Part 2?</p>
+                            <button onclick='alert("Correct! Being stopped means you successfully spoke for the full 2 minutes.")'>You spoke for the full 2 minutes - this is good!</button>
+                            <button onclick='alert("Incorrect. Being stopped is actually a positive sign that you reached the time limit.")'>You made a mistake and need to improve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='blog-post' id='part3'>
+            <h2 onclick='toggleContent("part3-content")'>Welcome to Part 3 of the IELTS Speaking Test</h2>
+            <div id='part3-content' class='content'>
+                <div class='blog-post'>
+                    <h2>Introduction</h2>
+                    <p>In the third and last part of the speaking test, known as the ‘The Two-way Discussion’, you will engage in a discussion with the examiner and will have the chance to express your views on a certain topic in a more abstract way. The examiner will assess your ability to analyse the topic, express views, justify opinions, organise and evaluate ideas.</p>
+                    <p>In this section of the course, you will:</p>
+                    <ul>
+                        <li>Learn about the format of Part 3 of the test, and the kind of questions you may be asked</li>
+                        <li>Acquire strategies which will help you provide more effective answers</li>
+                        <li>Learn specific language skills to help you improve your fluency, vocabulary, grammar, and pronunciation</li>
+                        <li>Learn useful tips to do your best when answering questions for this part of the test</li>
+                        <li>Watch and analyse a candidate answering some sample questions for this part of the test</li>
+                        <li>Have the chance to answer some practice questions and self-assess your responses</li>
+                    </ul>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("generating-ideas-content")'>Generating Ideas</h2>
+                    <div id='generating-ideas-content' class='content'>
+                        <p>It can be difficult to think of ideas in an exam situation in which you may be feeling nervous. One effective way to generate ideas when you are given a question or a topic is to consider different perspectives (i.e. points of view). Some possible perspectives are:</p>
+                        <ul>
+                            <li>Social</li>
+                            <li>Familial</li>
+                            <li>Educational</li>
+                            <li>Scientific</li>
+                            <li>Economic</li>
+                            <li>Technological</li>
+                            <li>Health</li>
+                            <li>Personal</li>
+                            <li>Communicative</li>
+                            <li>Artistic</li>
+                            <li>Political</li>
+                            <li>Geographical</li>
+                            <li>Psychological</li>
+                        </ul>
+                        <p>Below is a sample question from Part 3 of the test and three possible perspectives that could be considered to generate more ideas for the answer.</p>
+                        <div class='sample-answer'>
+                            <p><strong>Question:</strong> What could managers of big companies do to create a good working environment for their employees?</p>
+                            <p><strong>Perspectives:</strong></p>
+                            <ul>
+                                <li><strong>Technological:</strong> Better equipment - works efficiently.</li>
+                                <li><strong>Social:</strong> Teamwork / better relationships / social activities (games, lunches).</li>
+                                <li><strong>Environmental:</strong> Better office environment / large space.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("developing-answers-content")'>Developing Answers</h2>
+                    <div id='developing-answers-content' class='content'>
+                        <p>Your responses in Part 3 of the test need to be longer and more developed than in Part 1. You have already learnt how to use different perspectives to generate ideas. In addition to this, you can further develop your responses by following these steps:</p>
+                        <ul>
+                            <li>Provide more than one reason, suggestion or advantage: There are a few/a couple/several reasons/suggestions/advantages;</li>
+                            <li>Explain the reasons, suggestions or advantages: The reason is that; This means that; This is because;</li>
+                            <li>Give examples: For instance; For example; such as;</li>
+                        </ul>
+                        <div class='sample-answer'>
+                            <p><strong>Question:</strong> Why do you think some people are better at learning languages than others?</p>
+                            <p><strong>Response:</strong> There are a couple of reasons why some people are better at acquiring languages. One reason is their location. If they grew up in a region that has a lot of languages, they may find it easier to learn just because of practice. For example, in Switzerland, many people can speak Swiss-German, German, French, Italian and Romansch. Another reason is that they may have a personal interest in learning a language. Some people just like studying words and they become good at it through pure interest.</p>
+                            <p>This is an effective and well-developed answer. It starts by providing two reasons and these are explained and supported by examples. The signposts used to clearly introduce these ideas are: 'There are a couple of ....', 'One reason is...', 'For example...', and 'Another reason ...'.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("relevant-answers-content")'>Giving Relevant Answers</h2>
+                    <div id='relevant-answers-content' class='content'>
+                        <p>It is essential that you listen to the examiner’s questions carefully and provide relevant answers. This means that you need to give responses which directly answer the questions. You can do this by ensuring that you identify the function of the question and the main content words.</p>
+                        <p>A question may ask you to do one or more of the following:</p>
+                        <ul>
+                            <li>Describe</li>
+                            <li>Give a preference</li>
+                            <li>Give an opinion</li>
+                            <li>Explain</li>
+                            <li>Suggest</li>
+                            <li>Compare and contrast</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='blog-post'>
+                    <h2 onclick='toggleContent("useful-tips-part3-content")'>Useful Tips for Part 3</h2>
+                    <div id='useful-tips-part3-content' class='content'>
+                        <p>Here are some useful tips to help you perform better when answering questions for Part 3 of the IELTS Speaking Test:</p>
+                        <ul>
+                            <li><strong>Tip 1 - Develop Your Ideas:</strong> To provide well developed answers, you should give an opinion followed by a reason, and then provide an example. You may also want to consider aspects about the past or the future regarding the question asked.</li>
+                            <li><strong>Tip 2 - Stay on Topic:</strong> Listen carefully to the questions and make sure your answers are relevant to what you are being asked. The examiner will not use words like ‘speculate’ or ‘contrast’, so listen carefully and identify the purpose of the questions.</li>
+                            <li><strong>Tip 3 - Do Most of the Speaking:</strong> While it is a conversation, it is important that you do most of the talking. Avoid asking the examiner questions such as “Do you agree?” or “What do you think?”</li>
+                            <li><strong>Tip 4 - Ask for Clarification:</strong> If you do not understand a question or a particular word, it’s okay to ask the examiner for clarification. Unlike Part 1, in this part of the test, the examiner may paraphrase the question or give you a synonym for an unfamiliar word.</li>
+                            <li><strong>Tip 5 - Avoid Saying "I don't know":</strong> Instead of saying this, use expressions such as, “I’m not quite sure about that, but I think,” or, “I hadn’t thought about that before, but I’d probably say…”</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>BY RAMS TORANA</footer>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+            } else {
+                content.classList.add('active');
+            }
+        }
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
